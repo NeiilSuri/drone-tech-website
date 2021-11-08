@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height:100vh;
+            background: rgb(20, 20, 20);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .feedbackbox{
+            background: #fff;
+            padding: 50px 100px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .emoji{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 0;
+            overflow: hidden;
+        }
+        .emoji img{
+            width: 82px;
+            margin: 0 10px;
+         }
+         #emoji{
+             display: flex;
+             align-items: center;
+             transform:translateX(-400px);
+             transition: 0.3s;
+         }
+         .rating .fas{
+             font-size: 40px;
+             color:#e4e4e4;
+             cursor: pointer;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="feedbackbox">
+            <div class="emoji">
+                <div id="emoji">
+                    <img src="images/poor.png">
+                    <img src="images/bad.png">
+                    <img src="images/okay.png">
+                    <img src="images/good.png">
+                    <img src="images/excellent.png">
+                </div>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+   <script src="response.js"></script>
+</body>
+</html>
